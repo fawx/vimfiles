@@ -1,5 +1,8 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
-let g:netrw_dirhist_1='/Users/fox/Sites/sober'
-let g:netrw_dirhist_2='/Users/fox/Sites/sober/workspace'
-let g:netrw_dirhist_3='/Users/fox/Sites/sober/workspace/pages'
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/Users/fox/Sites/meekswestern/src/meekswestern/templates'
+let g:netrw_dirhist_2='/Users/fox/Sites/meekswestern/src/meekswestern/templates/home'
+let g:netrw_dirhist_3='/Users/fox/Sites/meeksmidwest/meeks/src'
+let g:netrw_dirhist_4='/Users/fox/Sites/meeksmidwest/meeks/src/meeks'
+let g:netrw_dirhist_5='/Users/fox/Sites/meeksmidwest/meeks/src/meeks/settings'
+let g:netrw_dirhist_6='/Users/fox/Sites/meeksmidwest/meeks/src/meeks/settings/development'
