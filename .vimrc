@@ -8,6 +8,7 @@ Bundle 'gmarik/vundle'
 Bundle 'kien/ctrlp.vim'
 Bundle 'tpope/vim-haml'
 Bundle 'JulesWang/css.vim'
+Bundle "pangloss/vim-javascript"
 Bundle 'vim-scripts/twilight256.vim'
 Bundle "MarcWeber/vim-addon-mw-utils"
 Bundle "tomtom/tlib_vim"
@@ -38,7 +39,7 @@ set ignorecase                                          " ignore case in searche
 set smartcase                                           " .. unless a capital is present
 set scrolloff=10                                        " keep 10 extra lines around the cursor
 set sidescrolloff=10
-
+set hlsearch                                            " highlight search
 
 " syntax and filetype settings
 syntax on                                               " syntax coloring
@@ -49,7 +50,7 @@ set directory=/tmp
 
 
 " ignore some temp and swap files
-set wildignore+=*/.sass-cache/*,*.swp,*.swo,*.pyc,.DS_Store,*.jpeg,*.jpg,*.gif,*.png
+set wildignore+=*/.sass-cache/*,*/node_modules/*,*/symphony/*,*/extensions/*,*/cache/*,*.swp,*.swo,*.pyc,.DS_Store,*.jpeg,*.jpg,*.gif,*.png
 
 
 " html syntax sucks so use xml
@@ -97,7 +98,12 @@ hi TabLineSel ctermfg=226 ctermbg=black
 " active and inactive window status bars
 hi VertSplit ctermfg=15 ctermbg=200 guibg=grey31 guifg=#b2b2b2
 hi StatusLine   ctermfg=15  guifg=#000000 ctermbg=200 guibg=grey91 cterm=bold gui=bold
-hi StatusLineNC ctermfg=15  guifg=grey81 ctermbg=237 guibg=grey41 cterm=none gui=none
+hi StatusLineNC ctermfg=15  guifg=grey81 ctermbg=237 guibg=grey91 cterm=none gui=none
+
+
+" insert a warning when lines exceed 80 chars
+" highlight ColorColumn ctermbg=67
+" call matchadd('ColorColumn', '\%81v', 236)
 
 
 " mvim/gvim options
